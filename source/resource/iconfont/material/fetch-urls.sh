@@ -9,5 +9,5 @@ get 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38
 # edge
 get 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246'
 
-curl https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints | perl -e 'print "{";while (<>){my ($k,$v) = split;print qq{  "$k": "$v",\n}};print "}"' > MaterialIcons-Regular.map
- 
+# curl https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints | perl -e 'print "{";while (<>){my ($k,$v) = split;print qq{  "$k": "$v",\n}};print "}"' > MaterialIcons-Regular.json
+curl https://raw.githubusercontent.com/google/material-design-icons/94eb8d16ba2d931ac30b43b3fa37235fd261903f/iconfont/codepoints| perl -e 'print "{";while (<>){my ($k,$v) = split;print qq{  "$k": "$v",\n}};print "}"' > MaterialIcons-Regular.json
